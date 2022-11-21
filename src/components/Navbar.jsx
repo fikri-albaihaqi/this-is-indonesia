@@ -2,11 +2,13 @@ import logo from '../assets/logo.svg'
 
 const Navbar = () => {
   return (
-    <nav className='absolute w-screen py-8 px-16 flex justify-between z-20'>
-      <img src={logo} alt="" />
-      <div className='text-white text-xl font-signika font-medium'>
-        <a className='px-8 py-4' href="">Popular places</a>
-        <a className='px-8 py-4' href="">Travel facts</a>
+    <nav className='absolute w-screen py-4 md:py-8 px-12 md:px-16 flex flex-col items-center md:flex-row md:justify-between z-20'>
+      <a href="#header">
+        <img src={logo} alt="" />
+      </a>
+      <div className='flex justify-evenly md:justify-end w-full text-white font-signika font-medium'>
+        <a className='md:px-8 md:py-4' href="#popular-places">Popular places</a>
+        <a className='md:px-8 md:py-4' href="#travel-facts">Travel facts</a>
       </div>
     </nav>
   )

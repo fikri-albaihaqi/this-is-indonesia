@@ -14,11 +14,18 @@ const TravelFacts = () => {
   ])
 
   return (
-    <div className="w-[60vw] m-auto flex flex-col items-center mb-32">
-      <h1 className="font-signika font-bold text-4xl text-dark">Travel Facts About</h1>
-      <h1 className="font-caveat font-bold text-7xl text-primary -mt-6">Indonesia</h1>
+    <div className="w-[60vw] m-auto flex flex-col items-center mb-32" id='travel-facts'>
+      <h1 className="font-signika font-bold text-2xl md:text-4xl text-dark">Travel Facts About</h1>
+      <h1 className="font-caveat font-bold text-5xl md:text-7xl text-primary -mt-5 md:-mt-6">Indonesia</h1>
       <img src={map} className='mt-16' alt="" />
-      <div className='w-full flex flex-col items-center mt-24'>
+      <div>
+      <div className='md:hidden mt-12'>
+          {facts.map((fact, i) => (
+            <Fact key={i} fact={fact} />
+          ))}
+        </div>
+      </div>
+      <div className='hidden w-full md:flex flex-col items-center mt-24'>
         <div>
           {facts.slice(0, 1).map((fact, i) => (
             <Fact key={i} fact={fact} />

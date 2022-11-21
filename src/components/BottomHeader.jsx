@@ -7,7 +7,7 @@ const BottomHeader = () => {
       backgroundSize: 'cover',
       backgroundPosition: 'center'
     }}>
-      <img src={logo} className='w-[500px]' alt="" />
+      <img src={logo} className='w-1/2 md:w-[500px]' alt="" />
     </div>
   )
 }

@@ -3,11 +3,12 @@ import bg from '../assets/rect-bg.svg'
 const Fact = ({fact}) => {
   return (
     <div 
-      className='w-[250px] h-[95px] flex items-center text-center' style={{
+      className='w-[170px] md:w-[250px] h-[65px] md:h-[95px] flex items-center text-center my-4 p-2' style={{
       backgroundImage: 'url(' + bg + ')',
-      backgroundSize: '100%'
+      backgroundSize: '100%',
+      backgroundRepeat: 'no-repeat'
     }}>
-      <p className='text-white font-signika'>
+      <p className='text-xs md:text-base text-white font-signika'>
         {fact}
       </p>
     </div>

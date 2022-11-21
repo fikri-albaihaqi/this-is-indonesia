@@ -39,8 +39,8 @@ const PopularPlaces = () => {
   ])
 
   return (
-    <div className="w-[60vw] m-auto mt-16">
-      <div className="fixed top-0 left-0 w-[85px] h-screen" style={{
+    <div className="w-[70vw] md:w-[60vw] m-auto mt-16" id="popular-places">
+      <div className="fixed top-0 left-0 w-[40px] md:w-[85px] h-screen" style={{
         backgroundImage: 'url(' + pattern + ')',
         backgroundSize: '100%'
       }}></div>
