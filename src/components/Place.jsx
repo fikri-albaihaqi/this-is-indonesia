@@ -2,7 +2,7 @@ const Place = ({ place, index }) => {
 
   return (
     index % 2 === 0 ? (
-      <div className="my-32 first:mt-0">
+      <div className="h-screen">
         <h1 className="text-6xl text-primary font-caveat font-bold">{place.name}</h1>
         <div className="flex mt-6">
           <div className="min-w-[500px] h-[500px] rounded-xl" style={{
@@ -23,7 +23,7 @@ const Place = ({ place, index }) => {
         </div>
       </div>
     ) : (
-      <div className="my-32 first:mt-0">
+      <div className="h-screen">
         <h1 className="text-6xl text-right text-primary font-caveat font-bold">{place.name}</h1>
         <div className="flex mt-6">
           <div className="flex flex-col mr-8 mt-8">

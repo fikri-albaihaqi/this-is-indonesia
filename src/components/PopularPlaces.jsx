@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Place from "./Place"
+import pattern from '../assets/pattern.svg'
 
 const PopularPlaces = () => {
   const [places, setPlaces] = useState([
@@ -39,6 +40,10 @@ const PopularPlaces = () => {
 
   return (
     <div className="w-[60vw] m-auto mt-16">
+      <div className="fixed top-0 left-0 w-[85px] h-screen" style={{
+        backgroundImage: 'url(' + pattern + ')',
+        backgroundSize: '100%'
+      }}></div>
       <h1 className="text-dark font-signika font-bold text-4xl">Popular Places</h1>
       <div className="mt-16">
         {places.map((place, i) => (

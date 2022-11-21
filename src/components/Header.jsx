@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header className="w-screen h-screen" style={{
+    <header className="relative w-screen h-screen z-10 bg-fixed" style={{
       backgroundImage: 'url(https://images.unsplash.com/photo-1511248391039-7d043f42ac7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80)',
       backgroundSize: 'cover',
       backgroundPosition: 'center'
