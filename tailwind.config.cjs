@@ -15,6 +15,15 @@ module.exports = {
         'caveat': ['Caveat', 'cursive'],
         'signika': ['Signika', 'sans-serif'],
       },
+      animation: {
+        bounceslow: 'bounceslow 3s ease-in-out infinite'
+      },
+      keyframes: {
+        bounceslow: {
+          '0%, 100%': {transform: 'translateY(-5px)'},
+          '50%': {transform: 'none'}
+        }
+      }
     },
   },
   plugins: [],

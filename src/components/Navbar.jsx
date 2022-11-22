@@ -6,7 +6,7 @@ const Navbar = () => {
       <a href="#header">
         <img src={logo} alt="" />
       </a>
-      <div className='flex justify-evenly md:justify-end w-full text-white font-signika font-medium'>
+      <div className='flex justify-evenly md:justify-end w-full text-white font-signika font-medium md:text-lg'>
         <a className='md:px-8 md:py-4' href="#popular-places">Popular places</a>
         <a className='md:px-8 md:py-4' href="#travel-facts">Travel facts</a>
       </div>

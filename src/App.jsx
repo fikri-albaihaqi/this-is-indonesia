@@ -4,8 +4,11 @@ import Navbar from './components/Navbar'
 import PopularPlaces from './components/PopularPlaces'
 import TravelFacts from './components/TravelFacts'
 import Footer from './components/Footer'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function App() {
+  AOS.init()
 
   return (
     <div className='overflow-x-hidden overflow-y-hidden bg-light'>

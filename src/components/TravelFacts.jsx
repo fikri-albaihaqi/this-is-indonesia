@@ -15,9 +15,9 @@ const TravelFacts = () => {
 
   return (
     <div className="w-[60vw] m-auto flex flex-col items-center mb-32" id='travel-facts'>
-      <h1 className="font-signika font-bold text-2xl md:text-4xl text-dark">Travel Facts About</h1>
-      <h1 className="font-caveat font-bold text-5xl md:text-7xl text-primary -mt-5 md:-mt-6">Indonesia</h1>
-      <img src={map} className='mt-16' alt="" />
+      <h1 className="font-signika font-bold text-2xl md:text-4xl text-dark" data-aos='fade-down'>Travel Facts About</h1>
+      <h1 className="font-caveat font-bold text-5xl md:text-7xl text-primary -mt-5 md:-mt-6" data-aos='fade-up' data-aos-duration="1500">Indonesia</h1>
+      <img src={map} className='mt-16' alt="" data-aos='zoom-in' data-aos-duration="1500" data-aos-delay="500" />
       <div>
       <div className='md:hidden mt-12'>
           {facts.map((fact, i) => (

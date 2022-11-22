@@ -7,8 +7,8 @@ const Header = () => {
         backgroundPosition: 'center'
       }}
     >
-      <h1 className="pt-[40vh] text-center font-caveat font-bold text-6xl md:text-8xl text-white">Paradise on Earth</h1>
-      <div className="relative h-[35%] md:h-[45%] flex flex-col items-center justify-end font-signika">
+      <h1 className="pt-[40vh] text-center font-caveat font-bold text-6xl md:text-8xl text-white" data-aos='fade-up' data-aos-duration="2000">Paradise on Earth</h1>
+      <div className="relative h-[35%] md:h-[45%] flex flex-col items-center justify-end font-signika animate-bounceslow">
         <p className="text-white text-center mb-2">Discover Indonesia</p>
         <div className="flex items-center justify-center border-[1px] border-white rounded-full w-[40px] h-[40px]">
           <span className="material-symbols-outlined text-white">

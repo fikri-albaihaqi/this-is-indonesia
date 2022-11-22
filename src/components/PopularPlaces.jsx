@@ -44,7 +44,7 @@ const PopularPlaces = () => {
         backgroundImage: 'url(' + pattern + ')',
         backgroundSize: '100%'
       }}></div>
-      <h1 className="text-dark font-signika font-bold text-4xl">Popular Places</h1>
+      <h1 className="text-dark font-signika font-bold text-4xl" data-aos='fade-up' data-aos-duration="1000">Popular Places</h1>
       <div className="mt-16">
         {places.map((place, i) => (
           <Place key={i} place={place} index={i} />
