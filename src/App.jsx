@@ -6,12 +6,25 @@ import TravelFacts from './components/TravelFacts'
 import Footer from './components/Footer'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Lenis from 'lenis'
+import { useEffect } from 'react'
 
 function App() {
-  AOS.init()
+  useEffect(() => {
+    AOS.init({
+      startEvent: 'load',
+    })
+
+    const lenis = new Lenis()
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+    requestAnimationFrame(raf)
+  }, [])
 
   return (
-    <div className='overflow-x-hidden overflow-y-hidden bg-light'>
+    <div className="overflow-x-hidden overflow-y-hidden bg-light">
       <Navbar />
       <Header />
       <PopularPlaces />
